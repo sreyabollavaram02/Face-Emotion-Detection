@@ -1,27 +1,9 @@
-# Face-Emotion-Detection
-Introduction
-This project aims to classify the emotion on a person's face into one of seven categories, using deep convolutional neural networks. The model is trained on the **FER-2013** dataset which was published on International Conference on Machine Learning (ICML). This dataset consists of 35887 grayscale, 48x48 sized face images with seven emotions - angry, disgusted, fearful, happy, neutral, sad and surprised.
-## Basic Usage
-First, clone the repository and enter the folder
-Download the FER-2013 dataset inside the src folder.
-**If you want to train this model, use:**
-cd src
-python emotions.py --mode train
-**If you want to view the predictions without training again, you can download the pre-trained model from here and then run:**
-cd src
-python emotions.py --mode display
-The folder structure is of the form:
-src:
-
-data (folder)
-emotions.py (file)
-haarcascade_frontalface_default.xml (file)
-model.h5 (file)
-**Algorithm**
-First, the haar cascade method is used to detect faces in each frame of the webcam feed.
-
-The region of image containing the face is resized to 48x48 and is passed as input to the CNN.
-
-The network outputs a list of softmax scores for the seven classes of emotions.
-
-The emotion with maximum score is displayed on the screen.
+This project aims to classify the emotion on a person's face into one of seven categories, using deep convolutional neural networks.
+It mainly focuses on 7 different emotions namely angry, surprise, happy, sad, neutral, fear and disgusted.
+It mainly identifies emotion of any image given and it can also work through webcam video so that it directly classifies the emotion in live.
+# For the identification of emotion through image uploaded the following link can be accessed for th code:
+[https://colab.research.google.com/drive/1Dh8o-KPJLW0aj5fec7mybr5C9xfJRcjG](url)
+For this you ned to upload the image in the colab notebook. Then itself the image can be easily available for the model to classify the emotion in it.
+# Through webcam :
+one can clone this github repo and once all the folders of this project comes into availability just open through visualstudio code or any other preferrable developing tool. 
+Then open the videoteste.py file and run it
