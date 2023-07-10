@@ -1,3 +1,4 @@
+# Face Emotion Detection
 This project aims to classify the emotion on a person's face into one of seven categories, using deep convolutional neural networks.
 It mainly focuses on 7 different emotions namely angry, surprise, happy, sad, neutral, fear and disgusted.
 It mainly identifies emotion of any image given and it can also work through webcam video so that it directly classifies the emotion in live.
