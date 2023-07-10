@@ -17,7 +17,7 @@ data (folder)
 emotions.py (file)
 haarcascade_frontalface_default.xml (file)
 model.h5 (file)
-#
+### Algorithm
 First, the haar cascade method is used to detect faces in each frame of the webcam feed.
 
 The region of image containing the face is resized to 48x48 and is passed as input to the CNN.
